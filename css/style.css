@@ -1,7 +1,22 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter";
+}
+a {
+  color: #000 !important;
+  text-decoration: none;
+}
+.container {
+  max-width: 1266px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 .header {
   display: flex;
   justify-content: center;
-  height: 50px;
+  height: 60px;
+  padding: 8px;
   width: 100%;
   background-color: #ffffff;
 }
@@ -19,6 +34,7 @@
 .burgerlogo {
   justify-content: center;
   display: flex;
+  align-items: center;
 }
 .notification {
   width: 10%;
@@ -28,35 +44,84 @@
 .kz {
   width: 10%;
   height: auto;
-  margin-top: -11px;
+  margin-top: 15px;
 }
 .burger {
   width: 10%;
   height: auto;
   margin-left: 50px;
+  margin-top: 10px;
 }
 
 .main {
   display: flex;
   background-color: #fecc00;
   justify-content: center;
+  align-items: center;
 }
 .main-img {
-  background: url(../img/свет2\ 1.svg);
-  opacity: 5;
+  background-image: url(../img/Group\ 9303.png);
+  width: 1111px;
+  height: 836px;
 }
-.main-subtitle {
-  margin-top: 270px;
-}
+
 .subtitle {
   font-family: "Montserrat";
   font-size: 24px;
+}
+.subtitle-txt {
+  margin-right: 155px;
 }
 .main-txt {
   font-family: "Nunito";
   font-size: 48px;
   letter-spacing: -0.01em;
   text-transform: uppercase;
+}
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  cursor: pointer;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #004e8f;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ffffff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  border-top: none;
+}
+.tablinks-active {
+  background-color: #ffffff;
+  display: flex;
+  color: #004e8f;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 15px;
+  border-radius: 8px;
+}
+.tablinks {
+  color: #ffffff;
+  background-color: #0464b3;
+  padding: 12px 15px;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
 }
 .main-btn {
   border: 1px solid #000000;
@@ -84,30 +149,8 @@
   width: 100%;
   margin: 10px;
   display: flex;
-  width: 154px;
   height: 42px;
-  font-size: 15px;
-  border-radius: 8px;
-}
-.online-ticket {
-  background-color: #ffffff;
-  display: flex;
-  color: #004e8f;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 15px;
   gap: 10px;
-}
-.paper-ticket {
-  color: #ffffff;
-  background-color: #0464b3;
-  padding: 12px 15px;
-  gap: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 .second-text-subtitle ul {
   list-style-image: url(../img/Rectangle\ 1.svg);
@@ -123,6 +166,7 @@
 }
 .loto-list-img {
   display: flex;
+  flex-direction: column;
 }
 .third-main {
   display: flex;
@@ -130,9 +174,34 @@
   align-items: center;
   background-color: #fecc00;
 }
-.third-main-img {
-  margin-top: 140px;
+.date {
+  display: flex;
+  background-color: #004e8f;
+  gap: 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  justify-content: space-around;
+  width: 480px;
+  height: 72px;
+  padding: 8px;
 }
+.dates-sub {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 480px;
+  height: 111px;
+  padding: 8px;
+}
+.sub-txt {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-left: 10px;
+}
+
 .third-main-txt {
   font-family: "Inter";
   margin-top: 100px;
@@ -144,15 +213,20 @@
   background-color: #fecc00;
   align-items: center;
 }
+.four-img {
+  position: relative;
+  bottom: -70px;
+}
 .cheking-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: #ffffff;
   border-radius: 24px;
-  width: 438px;
+  width: 452px;
   height: 314px;
   align-items: center;
+  padding: 10px;
 }
 .four-img {
   margin-top: 150px;
@@ -168,22 +242,23 @@
   align-items: center;
   justify-content: center;
   font-size: 35px;
+  margin-top: 60px;
 }
 
 .question {
   color: #000000;
   background: #ffffff;
   border-radius: 16px;
-  width: 970px;
+  width: 1000px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 11px;
   gap: 20px;
   font-size: 26px;
 }
 
-.last-section {
+.last-section-txt {
   background-color: #004e8f;
   display: flex;
   justify-content: center;
@@ -243,22 +318,24 @@
   align-items: center;
   background: #ffffff;
   width: 438px;
-  height: 600px;
+  height: 620px;
   padding: 10px;
   border-radius: 24px;
 }
 .registration-btn {
+  display: flex;
+  align-items: center;
   border-radius: 15px;
   width: 374px;
   height: 50px;
   color: #8d8d8d;
   background-color: #ffffff;
-  border-color: rgba(196, 197, 197, 1);
+  border-color: #c4c5c5;
 }
 
 /* mobile verison */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
   .burger {
     display: block !important;
   }
@@ -288,7 +365,7 @@
     height: 24px;
     position: absolute;
     margin-top: 700px;
-    margin-left: 365px;
+    margin-left: 230px;
   }
   .main-btn-txt {
     color: #ffffff;
@@ -296,13 +373,14 @@
     font-size: 15px;
     border: none;
     background: none;
+    text-align: center;
   }
   .second-main,
   .second-passive,
   .third-main,
   .four-passive,
   .four-main,
-  .last-section {
+  .fifth-main {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -310,5 +388,42 @@
   .second-text-subtitle {
     display: flex;
     justify-content: center;
+  }
+  .subtitle-txt {
+    text-align: center;
+  }
+  .ticket-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .tab {
+    display: flex;
+    flex-direction: column;
+  }
+  .second-main-img,
+  .second-passive-img,
+  .four-img {
+    display: none;
+  }
+  .map-sales {
+    margin-left: 180px;
+  }
+  .registration-wrapper {
+    margin-left: 150px;
+  }
+  .tax-img {
+    margin-left: 200px;
+  }
+  .cheking-info {
+    margin-top: 30px;
+  }
+  .last-section-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .question {
+    margin-left: 10px;
+    width: 650px;
   }
 }
